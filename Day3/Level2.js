@@ -1,7 +1,7 @@
 // Number1
 let base = prompt("Enter base")
 let height = prompt("Enter height")
-let area = Number(0.5 * base * height)
+let area = (0.5 * base * height)
 console.log(`The area of the triangle is ${area}`);
 
 // Number2
