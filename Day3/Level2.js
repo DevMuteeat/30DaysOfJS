@@ -8,7 +8,7 @@ console.log(`The area of the triangle is ${area}`);
 let sideA = prompt("Enter side A of the Triangle")
 let sideB = prompt("Enter side B of the Triangle")
 let sideC = prompt("Enter side C of the Triangle")
-let perimeter = Number(sideA) + Number(sideB) + Number(sideC)
+let perimeter = sideA + sideB + sideC
 console.log(`The perimeter of the triangle is ${perimeter}`);
 
 // Number3
@@ -43,11 +43,11 @@ let yourAge = 25
 console.log(`I am ${myAge - yourAge} years older than you`);
 
 // Number11
-let birthYear1 = parseFloat(prompt("1995"))
-let birthYear2 = parseFloat(prompt("2005"))
-2020 - birthYear1 >= 18 ? console.log(`You are ${2020 - birthYear1} years old. You are old enough to drive`) : console.log('You are not old enough to drive');
-2020 - birthYear2 < 18 ? console.log(`You are ${2020 - birthYear2} years old.You will be allowed to drive after 3 years`) : console.log('You are old enough to drive');
-
+let userYear = Number(prompt("Enter birth year"))
+let $year = new Date().getFullYear
+let userAge = $year - userYear
+userAge >= 18 ? console.log(`You are ${userAge} years old, you are old enough to drive`) :
+console.log(`You are ${userAge} years old, you will be allowed to drive after ${18 - userAge} years`);
 // Number12
 let yearsLived = parseFloat(prompt("Enter numbers of years you live"))
 console.log(`You lived ${yearsLived * 31536000} seconds.`);

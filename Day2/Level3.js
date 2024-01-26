@@ -10,8 +10,9 @@ console.log(sent.replace(regEx, ''));
 let income =  'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 let digit = /\d+/g;
 let digitWords = income.match(digit)
-let income1 = parseInt(digitWords[0]);
+let income1 = parseInt(digitWords[0])*12;
 let income2 = parseInt(digitWords[1]);
-let income3 = parseInt(digitWords[2]);
+let income3 = parseInt(digitWords[2]*12);
 let totalIncome = income1 + income2 + income3;
+// let income4 = parseInt(digitWords[0]*12 + digitWords[1]+ digitWords[2]*12);
 console.log(totalIncome);
