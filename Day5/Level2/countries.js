@@ -1,4 +1,4 @@
-const countries = [
+export default [
     'Albania',
     'Bolivia',
     'Canada',
