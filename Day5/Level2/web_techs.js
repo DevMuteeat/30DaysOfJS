@@ -1,4 +1,4 @@
-const webTechs = [
+export default [
     'HTML',
     'CSS',
     'JavaScript',

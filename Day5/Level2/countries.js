@@ -1,4 +1,4 @@
-export default [
+export const countries = [
     'Albania',
     'Bolivia',
     'Canada',
